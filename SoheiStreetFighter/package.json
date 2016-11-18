@@ -1,0 +1,24 @@
+{
+  "name": "sohei-street-fighter",
+  "version": "1.0.0",
+  "description": "Sohei Nishino Street view",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilmveel/sohei-nishino.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/wilmveel/sohei-nishino#readme",
+  "bugs": {
+    "url": "https://github.com/wilmveel/sohei-nishino/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}

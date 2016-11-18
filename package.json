@@ -1,0 +1,22 @@
+{
+  "name": "sohei-nishino",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilmveel/sohei-nishino.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wilmveel/sohei-nishino/issues"
+  },
+  "homepage": "https://github.com/wilmveel/sohei-nishino#readme",
+  "devDependencies": {
+    "canvas": "^1.6.2"
+  }
+}

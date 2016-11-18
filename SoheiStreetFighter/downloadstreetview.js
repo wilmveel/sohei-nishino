@@ -38,7 +38,7 @@ function getPicture(obj){
       res.on('end', function(){
           fs.writeFile('images/image' + obj.long + '-' + obj.lat + '.jpg', imagedata, 'binary', function(err){
               if (err) throw err
-              console.log('File saved.')
+              console.log('File saved: image' + obj.long + '-' + obj.lat + '.jpg')
           })
       })
   });

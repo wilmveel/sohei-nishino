@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/wilmveel/sohei-nishino/issues"
   },
-  "homepage": "https://github.com/wilmveel/sohei-nishino#readme"
+  "homepage": "https://github.com/wilmveel/sohei-nishino#readme",
+  "dependencies": {
+    "osm-read": "^0.6.0"
+  }
 }

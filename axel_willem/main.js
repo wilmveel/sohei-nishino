@@ -31,28 +31,21 @@ var parser = osmread.parse({
 
     },
     node: function (node) {
-        nodes[node.id] = node;
+        console.log('bounds: ', b.minlat, b.minlon, b.maxlat, b.minlat);
+        console.log('node: ' + JSON.stringify(node.lat) + " " + JSON.stringify(node.lon));
+
+
+        var x = node.lat - b.minlat;
+        var y = node.lon - b.minlon;
+
+        console.log('XY', x, y)
+        ctx.beginPath();
+        ctx.lineTo(100000 * x, 100000 * y);
+        ctx.lineTo(100000 * x + .5, 100000 * y + .5);
+        ctx.stroke();
     },
-    way: function (way) {
-        way.nodeRefs.forEach(function(id){
-            console.log('lala: ' + id);
-            var node = nodes[id];
-            console.log('bounds: ', b.minlat, b.minlon, b.maxlat, b.minlat);
-            console.log('node: ' + JSON.stringify(node.lat) + " " + JSON.stringify(node.lon));
-
-
-            var x = node.lat - b.minlat;
-            var y = node.lon - b.minlon;
-
-            console.log('XY', x, y)
-            ctx.beginPath();
-            ctx.lineTo(100000 * x, 100000 * y);
-            ctx.lineTo(100000 * x + .5, 100000 * y + .5);
-            ctx.stroke();
-        })
-        console.log('way: ' + JSON.stringify(way));
-
-    },
+    //way: function (way) {
+    //},
     //relation: function (relation) {
     //    console.log('relation: ' + JSON.stringify(relation));
     //},

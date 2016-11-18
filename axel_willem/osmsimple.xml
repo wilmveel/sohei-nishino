@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.5.8 (450 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="52.1061700" minlon="5.0897200" maxlat="52.1083500" maxlon="5.0943700"/>
+ <way id="300085691" visible="true" version="1" changeset="25009329" timestamp="2014-08-25T18:17:53Z" user="rivw_BAG" uid="1989843">
+  <nd ref="3041820927"/>
+  <nd ref="3041820626"/>
+  <nd ref="3041820596"/>
+  <nd ref="3041820614"/>
+  <nd ref="3041820574"/>
+  <nd ref="3041821072"/>
+  <nd ref="3041820913"/>
+  <nd ref="3041821048"/>
+  <nd ref="3041820907"/>
+  <nd ref="3041820927"/>
+  <tag k="building" v="house"/>
+  <tag k="ref:bag" v="344100000058587"/>
+  <tag k="source" v="BAG"/>
+  <tag k="source:date" v="2014-08-25"/>
+  <tag k="start_date" v="1926"/>
+ </way>
+ <way id="300085694" visible="true" version="1" changeset="25009329" timestamp="2014-08-25T18:17:53Z" user="rivw_BAG" uid="1989843">
+  <nd ref="3041819170"/>
+  <nd ref="3041819179"/>
+  <nd ref="3041824742"/>
+  <nd ref="3041824017"/>
+  <nd ref="3041823991"/>
+  <nd ref="3041823971"/>
+  <nd ref="3041823998"/>
+  <nd ref="3041823987"/>
+  <nd ref="3041824923"/>
+  <nd ref="3041819170"/>
+  <tag k="building" v="house"/>
+  <tag k="ref:bag" v="344100000057528"/>
+  <tag k="source" v="BAG"/>
+  <tag k="source:date" v="2014-08-25"/>
+  <tag k="start_date" v="1931"/>
+ </way>
+ <way id="300085699" visible="true" version="1" changeset="25009329" timestamp="2014-08-25T18:17:54Z" user="rivw_BAG" uid="1989843">
+  <nd ref="3041820213"/>
+  <nd ref="3041820764"/>
+  <nd ref="3041820741"/>
+  <nd ref="3041820226"/>
+  <nd ref="3041820842"/>
+  <nd ref="3041820869"/>
+  <nd ref="3041820914"/>
+  <nd ref="3041820575"/>
+  <nd ref="3041820625"/>
+  <nd ref="3041820213"/>
+  <tag k="building" v="house"/>
+  <tag k="ref:bag" v="344100000016098"/>
+  <tag k="source" v="BAG"/>
+  <tag k="source:date" v="2014-08-25"/>
+  <tag k="start_date" v="1926"/>
+ </way>
+ <way id="300085702" visible="true" version="1" changeset="25009329" timestamp="2014-08-25T18:17:54Z" user="rivw_BAG" uid="1989843">
+  <nd ref="3041829971"/>
+  <nd ref="3041825321"/>
+  <nd ref="3041830017"/>
+  <nd ref="3041829559"/>
+  <nd ref="3041829550"/>
+  <nd ref="3041829705"/>
+  <nd ref="3041829677"/>
+  <nd ref="3041829527"/>
+  <nd ref="3041829493"/>
+  <nd ref="3041829971"/>
+  <tag k="building" v="house"/>
+  <tag k="ref:bag" v="344100000000158"/>
+  <tag k="source" v="BAG"/>
+  <tag k="source:date" v="2014-08-25"/>
+  <tag k="start_date" v="1926"/>
+ </way>
+ <way id="300085736" visible="true" version="1" changeset="25009329" timestamp="2014-08-25T18:17:59Z" user="rivw_BAG" uid="1989843">
+  <nd ref="3041819423"/>
+  <nd ref="3041819677"/>
+  <nd ref="3041819913"/>
+  <nd ref="3041820155"/>
+  <nd ref="3041820139"/>
+  <nd ref="3041819888"/>
+  <nd ref="3041819885"/>
+  <nd ref="3041819849"/>
+  <nd ref="3041819717"/>
+  <nd ref="3041819423"/>
+  <tag k="building" v="house"/>
+  <tag k="ref:bag" v="344100000053019"/>
+  <tag k="source" v="BAG"/>
+  <tag k="source:date" v="2014-08-25"/>
+  <tag k="start_date" v="1926"/>
+ </way>
+ <way id="300085743" visible="true" version="1" changeset="25009329" timestamp="2014-08-25T18:18:00Z" user="rivw_BAG" uid="1989843">
+  <nd ref="3041818278"/>
+  <nd ref="3041818252"/>
+  <nd ref="3041818262"/>
+  <nd ref="3041811196"/>
+  <nd ref="3041818538"/>
+  <nd ref="3041811221"/>
+  <nd ref="3041811217"/>
+  <nd ref="3041818293"/>
+  <nd ref="3041818292"/>
+  <nd ref="3041818278"/>
+  <tag k="building" v="house"/>
+  <tag k="ref:bag" v="344100000035166"/>
+  <tag k="source" v="BAG"/>
+  <tag k="source:date" v="2014-08-25"/>
+  <tag k="start_date" v="1915"/>
+ </way>
+ <way id="300085744" visible="true" version="1" changeset="25009329" timestamp="2014-08-25T18:18:01Z" user="rivw_BAG" uid="1989843">
+  <nd ref="3041828916"/>
+  <nd ref="3041829170"/>
+  <nd ref="3041829172"/>
+  <nd ref="3041824829"/>
+  <nd ref="3041829353"/>
+  <nd ref="3041828909"/>
+  <nd ref="3041828852"/>
+  <nd ref="3041828853"/>
+  <nd ref="3041828611"/>
+  <nd ref="3041828916"/>
+  <tag k="building" v="yes"/>
+  <tag k="ref:bag" v="344100000100256"/>
+  <tag k="source" v="BAG"/>
+  <tag k="source:date" v="2014-08-25"/>
+  <tag k="start_date" v="1926"/>
+ </way>
+ <way id="300085746" visible="true" version="1" changeset="25009329" timestamp="2014-08-25T18:18:01Z" user="rivw_BAG" uid="1989843">
+  <nd ref="3041828843"/>
+  <nd ref="3041829141"/>
+  <nd ref="3041826766"/>
+  <nd ref="3041826754"/>
+  <nd ref="3041824714"/>
+  <nd ref="3041826774"/>
+  <nd ref="3041826770"/>
+  <nd ref="3041827996"/>
+  <nd ref="3041827936"/>
+  <nd ref="3041828843"/>
+  <tag k="building" v="house"/>
+  <tag k="ref:bag" v="344100000074911"/>
+  <tag k="source" v="BAG"/>
+  <tag k="source:date" v="2014-08-25"/>
+  <tag k="start_date" v="1931"/>
+ </way>
+ <way id="300085747" visible="true" version="1" changeset="25009329" timestamp="2014-08-25T18:18:01Z" user="rivw_BAG" uid="1989843">
+  <nd ref="3041830590"/>
+  <nd ref="3041831085"/>
+  <nd ref="3041831093"/>
+  <nd ref="3041831101"/>
+  <nd ref="3041831106"/>
+  <nd ref="3041831111"/>
+  <nd ref="3041829893"/>
+  <nd ref="3041831355"/>
+  <nd ref="3041831063"/>
+  <nd ref="3041830590"/>
+  <tag k="building" v="yes"/>
+  <tag k="ref:bag" v="344100000127393"/>
+  <tag k="source" v="BAG"/>
+  <tag k="source:date" v="2014-08-25"/>
+  <tag k="start_date" v="1931"/>
+ </way>
+ </osm>

@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-var api = require('./index').userApi
+var api = require('./index').streetviewApi
 
 app.use('/api', api);
 

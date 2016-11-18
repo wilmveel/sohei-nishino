@@ -9,7 +9,7 @@ var b;
 
 var nodes = {}
 
-var parser = osmread.parse({
+var lomp = {
     filePath: './osm.xml',
     endDocument: function () {
         console.log('document end');
@@ -52,5 +52,6 @@ var parser = osmread.parse({
     //error: function (msg) {
     //    console.log('error: ' + msg);
     //}
-});
+}
 
+var parser = osmread.parse(lomp);

@@ -1,3 +1,3 @@
 module.exports = {
-    userApi: require('./src/SoheiStreetFighter')
+    streetviewApi: require('./src/SoheiStreetFighter')
 };

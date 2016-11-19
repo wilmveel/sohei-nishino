@@ -16,8 +16,6 @@ inherits(encoder, Transform);
 
 encoder.prototype._transform = function _transform(line, encoding, callback) {
 
-    console.log(line.toString())
-
     var REGEX = /<node id="(.*)" lat="(.*)" lon="(.*)"\/>/
 
     var match = line.toString().match(REGEX);

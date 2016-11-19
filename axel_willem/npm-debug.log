@@ -1,23 +1,645 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
-2 info using npm@3.10.8
-3 info using node@v6.9.1
-4 verbose stack Error: missing script: start
-4 verbose stack     at run (/usr/local/lib/node_modules/npm/lib/run-script.js:151:19)
-4 verbose stack     at /usr/local/lib/node_modules/npm/lib/run-script.js:61:5
-4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:356:5
-4 verbose stack     at checkBinReferences_ (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:320:45)
-4 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:354:3)
-4 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:124:5)
-4 verbose stack     at ReadFileContext.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:295:20)
-4 verbose stack     at ReadFileContext.callback (/usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16)
-4 verbose stack     at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:365:13)
-5 verbose cwd /Users/chris/Documents/workspace/sohei-nishino/axel_willem
-6 error Darwin 16.1.0
-7 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
-8 error node v6.9.1
-9 error npm  v3.10.8
-10 error missing script: start
-11 error If you need help, you may report this error at:
-11 error     <https://github.com/npm/npm/issues>
-12 verbose exit [ 1, true ]
+1 verbose cli [ '/Users/jerre/.nvm/versions/node/v4.4.5/bin/node',
+1 verbose cli   '/Users/jerre/.nvm/versions/node/v4.4.5/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'graphicsmagick-stream',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /Users/jerre/workspaces/sohei-nishino/axel_willem/package.json
+5 warn package.json sohei_nishino@1.0.0 No description
+6 warn package.json sohei_nishino@1.0.0 No README data
+7 verbose installManyTop reading scoped package data from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/array-parallel/package.json
+8 verbose installManyTop reading scoped package data from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/array-series/package.json
+9 verbose installManyTop reading scoped package data from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/cross-spawn/package.json
+10 verbose installManyTop reading scoped package data from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/debug/package.json
+11 verbose installManyTop reading scoped package data from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/gm/package.json
+12 verbose installManyTop reading scoped package data from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/isexe/package.json
+13 verbose installManyTop reading scoped package data from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/lru-cache/package.json
+14 verbose installManyTop reading scoped package data from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/ms/package.json
+15 verbose installManyTop reading scoped package data from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/pseudomap/package.json
+16 verbose installManyTop reading scoped package data from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/which/package.json
+17 verbose installManyTop reading scoped package data from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/yallist/package.json
+18 info package.json ms@0.7.1 No license field.
+19 verbose readDependencies loading dependencies from /Users/jerre/workspaces/sohei-nishino/axel_willem/package.json
+20 silly cache add args [ 'graphicsmagick-stream', null ]
+21 verbose cache add spec graphicsmagick-stream
+22 silly cache add parsed spec Result {
+22 silly cache add   raw: 'graphicsmagick-stream',
+22 silly cache add   scope: null,
+22 silly cache add   name: 'graphicsmagick-stream',
+22 silly cache add   rawSpec: '',
+22 silly cache add   spec: 'latest',
+22 silly cache add   type: 'tag' }
+23 silly addNamed graphicsmagick-stream@latest
+24 verbose addNamed "latest" is being treated as a dist-tag for graphicsmagick-stream
+25 info addNameTag [ 'graphicsmagick-stream', 'latest' ]
+26 silly mapToRegistry name graphicsmagick-stream
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'graphicsmagick-stream',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   name: 'graphicsmagick-stream',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://registry.npmjs.org/graphicsmagick-stream
+31 verbose addNameTag registry:https://registry.npmjs.org/graphicsmagick-stream not in flight; fetching
+32 verbose request uri https://registry.npmjs.org/graphicsmagick-stream
+33 verbose request no auth needed
+34 info attempt registry request try #1 at 11:58:29 AM
+35 verbose request id e209737c5cd6dc20
+36 verbose etag W/"55d1a447-50ac"
+37 verbose lastModified Mon, 17 Aug 2015 09:07:19 GMT
+38 http request GET https://registry.npmjs.org/graphicsmagick-stream
+39 http 304 https://registry.npmjs.org/graphicsmagick-stream
+40 verbose headers { date: 'Sat, 19 Nov 2016 10:58:29 GMT',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'cache-control': 'max-age=300',
+40 verbose headers   etag: 'W/"55d1a447-50ac"',
+40 verbose headers   age: '107',
+40 verbose headers   connection: 'keep-alive',
+40 verbose headers   'x-served-by': 'cache-lhr6320-LHR',
+40 verbose headers   'x-cache': 'HIT',
+40 verbose headers   'x-cache-hits': '1',
+40 verbose headers   'x-timer': 'S1479553109.432485,VS0,VE0',
+40 verbose headers   vary: 'Accept-Encoding' }
+41 silly get cb [ 304,
+41 silly get   { date: 'Sat, 19 Nov 2016 10:58:29 GMT',
+41 silly get     via: '1.1 varnish',
+41 silly get     'cache-control': 'max-age=300',
+41 silly get     etag: 'W/"55d1a447-50ac"',
+41 silly get     age: '107',
+41 silly get     connection: 'keep-alive',
+41 silly get     'x-served-by': 'cache-lhr6320-LHR',
+41 silly get     'x-cache': 'HIT',
+41 silly get     'x-cache-hits': '1',
+41 silly get     'x-timer': 'S1479553109.432485,VS0,VE0',
+41 silly get     vary: 'Accept-Encoding' } ]
+42 verbose etag https://registry.npmjs.org/graphicsmagick-stream from cache
+43 verbose get saving graphicsmagick-stream to /Users/jerre/.npm/registry.npmjs.org/graphicsmagick-stream/.cache.json
+44 verbose correctMkdir /Users/jerre/.npm correctMkdir not in flight; initializing
+45 silly addNameTag next cb for graphicsmagick-stream with tag latest
+46 silly addNamed graphicsmagick-stream@2.1.2
+47 verbose addNamed "2.1.2" is a plain semver version for graphicsmagick-stream
+48 silly cache afterAdd graphicsmagick-stream@2.1.2
+49 verbose afterAdd /Users/jerre/.npm/graphicsmagick-stream/2.1.2/package/package.json not in flight; writing
+50 verbose correctMkdir /Users/jerre/.npm correctMkdir not in flight; initializing
+51 verbose afterAdd /Users/jerre/.npm/graphicsmagick-stream/2.1.2/package/package.json written
+52 silly install resolved [ { name: 'graphicsmagick-stream',
+52 silly install resolved     version: '2.1.2',
+52 silly install resolved     description: 'Fast convertion/scaling of images using a pool of long lived graphicsmagick processes',
+52 silly install resolved     main: 'index.js',
+52 silly install resolved     dependencies: { once: '^1.3.0', xtend: '^3.0.0' },
+52 silly install resolved     devDependencies: { tape: '^4.0.0', 'tar-stream': '^1.1.4' },
+52 silly install resolved     repository:
+52 silly install resolved      { type: 'git',
+52 silly install resolved        url: 'git://github.com/e-conomic/graphicsmagick-stream.git' },
+52 silly install resolved     keywords:
+52 silly install resolved      [ 'gm',
+52 silly install resolved        'graphicsmagick',
+52 silly install resolved        'convert',
+52 silly install resolved        'convertion',
+52 silly install resolved        'scale',
+52 silly install resolved        'pool',
+52 silly install resolved        'stream' ],
+52 silly install resolved     scripts: { install: 'make', test: 'tape test/*.js' },
+52 silly install resolved     author: { name: 'Mathias Buus' },
+52 silly install resolved     license: 'MIT',
+52 silly install resolved     bugs: { url: 'https://github.com/e-conomic/graphicsmagick-stream/issues' },
+52 silly install resolved     homepage: 'https://github.com/e-conomic/graphicsmagick-stream',
+52 silly install resolved     gitHead: '1e98dbe95a18f5ee9cf1d5e6e8b2de752be03a35',
+52 silly install resolved     _id: 'graphicsmagick-stream@2.1.2',
+52 silly install resolved     _shasum: 'b633696afcbe8f906ebe5c0b252a9c463f9e70ba',
+52 silly install resolved     _from: 'graphicsmagick-stream@latest',
+52 silly install resolved     _npmVersion: '2.7.5',
+52 silly install resolved     _nodeVersion: '0.10.28',
+52 silly install resolved     _npmUser: { name: 'sorribas', email: 'eduardo@sorribas.org' },
+52 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+52 silly install resolved     dist:
+52 silly install resolved      { shasum: 'b633696afcbe8f906ebe5c0b252a9c463f9e70ba',
+52 silly install resolved        tarball: 'https://registry.npmjs.org/graphicsmagick-stream/-/graphicsmagick-stream-2.1.2.tgz' },
+52 silly install resolved     directories: {},
+52 silly install resolved     _resolved: 'https://registry.npmjs.org/graphicsmagick-stream/-/graphicsmagick-stream-2.1.2.tgz',
+52 silly install resolved     readme: 'ERROR: No README data found!' } ]
+53 info install graphicsmagick-stream@2.1.2 into /Users/jerre/workspaces/sohei-nishino/axel_willem
+54 info installOne graphicsmagick-stream@2.1.2
+55 verbose installOne of graphicsmagick-stream to /Users/jerre/workspaces/sohei-nishino/axel_willem not in flight; installing
+56 verbose correctMkdir /Users/jerre/.npm/_locks correctMkdir not in flight; initializing
+57 verbose lock using /Users/jerre/.npm/_locks/graphicsmagick-stream-bdf5d7a7265895a7.lock for /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream
+58 silly install write writing graphicsmagick-stream 2.1.2 to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream
+59 verbose unbuild node_modules/graphicsmagick-stream
+60 silly gentlyRm /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream is being purged from base /Users/jerre/workspaces/sohei-nishino/axel_willem
+61 verbose gentlyRm don't care about contents; nuking /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream
+62 verbose tar unpack /Users/jerre/.npm/graphicsmagick-stream/2.1.2/package.tgz
+63 verbose tar unpacking to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream
+64 silly gentlyRm /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream is being purged
+65 verbose gentlyRm don't care about contents; nuking /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream
+66 silly gunzTarPerm modes [ '755', '644' ]
+67 silly gunzTarPerm extractEntry package.json
+68 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+69 silly gunzTarPerm extractEntry .npmignore
+70 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+71 silly gunzTarPerm extractEntry README.md
+72 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+73 silly gunzTarPerm extractEntry example.js
+74 silly gunzTarPerm modified mode [ 'example.js', 436, 420 ]
+75 silly gunzTarPerm extractEntry index.js
+76 silly gunzTarPerm modified mode [ 'index.js', 509, 493 ]
+77 silly gunzTarPerm extractEntry .travis.yml
+78 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+79 silly gunzTarPerm extractEntry fail.pdf
+80 silly gunzTarPerm modified mode [ 'fail.pdf', 436, 420 ]
+81 silly gunzTarPerm extractEntry Makefile
+82 silly gunzTarPerm modified mode [ 'Makefile', 436, 420 ]
+83 silly gunzTarPerm extractEntry src/convert.c
+84 silly gunzTarPerm modified mode [ 'src/convert.c', 509, 493 ]
+85 silly gunzTarPerm extractEntry src/debug.h
+86 silly gunzTarPerm modified mode [ 'src/debug.h', 436, 420 ]
+87 silly gunzTarPerm extractEntry src/io.c
+88 silly gunzTarPerm modified mode [ 'src/io.c', 509, 493 ]
+89 silly gunzTarPerm extractEntry src/io.h
+90 silly gunzTarPerm modified mode [ 'src/io.h', 509, 493 ]
+91 silly gunzTarPerm extractEntry output1.png
+92 silly gunzTarPerm modified mode [ 'output1.png', 436, 420 ]
+93 silly gunzTarPerm extractEntry test/convert.js
+94 silly gunzTarPerm modified mode [ 'test/convert.js', 436, 420 ]
+95 silly gunzTarPerm extractEntry test/info.js
+96 silly gunzTarPerm modified mode [ 'test/info.js', 436, 420 ]
+97 silly gunzTarPerm extractEntry test/pool.js
+98 silly gunzTarPerm modified mode [ 'test/pool.js', 436, 420 ]
+99 silly gunzTarPerm extractEntry test/fixtures/index.js
+100 silly gunzTarPerm modified mode [ 'test/fixtures/index.js', 436, 420 ]
+101 silly gunzTarPerm extractEntry test/fixtures/test.bmp
+102 silly gunzTarPerm modified mode [ 'test/fixtures/test.bmp', 436, 420 ]
+103 silly gunzTarPerm extractEntry test/fixtures/test.gif
+104 silly gunzTarPerm modified mode [ 'test/fixtures/test.gif', 436, 420 ]
+105 silly gunzTarPerm extractEntry test/fixtures/test.jpeg
+106 silly gunzTarPerm modified mode [ 'test/fixtures/test.jpeg', 436, 420 ]
+107 silly gunzTarPerm extractEntry test/fixtures/test.pdf
+108 silly gunzTarPerm modified mode [ 'test/fixtures/test.pdf', 509, 493 ]
+109 silly gunzTarPerm extractEntry test/fixtures/test.png
+110 silly gunzTarPerm modified mode [ 'test/fixtures/test.png', 436, 420 ]
+111 verbose write writing to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/package.json
+112 info preinstall graphicsmagick-stream@2.1.2
+113 verbose readDependencies loading dependencies from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/package.json
+114 silly prepareForInstallMany adding once@^1.3.0 from graphicsmagick-stream dependencies
+115 silly prepareForInstallMany adding xtend@^3.0.0 from graphicsmagick-stream dependencies
+116 verbose readDependencies loading dependencies from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/package.json
+117 silly cache add args [ 'once@^1.3.0', null ]
+118 verbose cache add spec once@^1.3.0
+119 silly cache add args [ 'xtend@^3.0.0', null ]
+120 verbose cache add spec xtend@^3.0.0
+121 silly cache add parsed spec Result {
+121 silly cache add   raw: 'once@^1.3.0',
+121 silly cache add   scope: null,
+121 silly cache add   name: 'once',
+121 silly cache add   rawSpec: '^1.3.0',
+121 silly cache add   spec: '>=1.3.0 <2.0.0',
+121 silly cache add   type: 'range' }
+122 silly addNamed once@>=1.3.0 <2.0.0
+123 verbose addNamed ">=1.3.0 <2.0.0" is a valid semver range for once
+124 silly addNameRange { name: 'once', range: '>=1.3.0 <2.0.0', hasData: false }
+125 silly mapToRegistry name once
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry data Result {
+128 silly mapToRegistry   raw: 'once',
+128 silly mapToRegistry   scope: null,
+128 silly mapToRegistry   name: 'once',
+128 silly mapToRegistry   rawSpec: '',
+128 silly mapToRegistry   spec: 'latest',
+128 silly mapToRegistry   type: 'tag' }
+129 silly mapToRegistry uri https://registry.npmjs.org/once
+130 verbose addNameRange registry:https://registry.npmjs.org/once not in flight; fetching
+131 silly cache add parsed spec Result {
+131 silly cache add   raw: 'xtend@^3.0.0',
+131 silly cache add   scope: null,
+131 silly cache add   name: 'xtend',
+131 silly cache add   rawSpec: '^3.0.0',
+131 silly cache add   spec: '>=3.0.0 <4.0.0',
+131 silly cache add   type: 'range' }
+132 silly addNamed xtend@>=3.0.0 <4.0.0
+133 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for xtend
+134 silly addNameRange { name: 'xtend', range: '>=3.0.0 <4.0.0', hasData: false }
+135 silly mapToRegistry name xtend
+136 silly mapToRegistry using default registry
+137 silly mapToRegistry registry https://registry.npmjs.org/
+138 silly mapToRegistry data Result {
+138 silly mapToRegistry   raw: 'xtend',
+138 silly mapToRegistry   scope: null,
+138 silly mapToRegistry   name: 'xtend',
+138 silly mapToRegistry   rawSpec: '',
+138 silly mapToRegistry   spec: 'latest',
+138 silly mapToRegistry   type: 'tag' }
+139 silly mapToRegistry uri https://registry.npmjs.org/xtend
+140 verbose addNameRange registry:https://registry.npmjs.org/xtend not in flight; fetching
+141 verbose request uri https://registry.npmjs.org/once
+142 verbose request no auth needed
+143 info attempt registry request try #1 at 11:58:29 AM
+144 verbose etag W/"582dbc11-2579"
+145 verbose lastModified Thu, 17 Nov 2016 14:17:53 GMT
+146 http request GET https://registry.npmjs.org/once
+147 verbose request uri https://registry.npmjs.org/xtend
+148 verbose request no auth needed
+149 info attempt registry request try #1 at 11:58:29 AM
+150 verbose etag W/"582bc4e2-51e0"
+151 verbose lastModified Wed, 16 Nov 2016 02:30:58 GMT
+152 http request GET https://registry.npmjs.org/xtend
+153 http 304 https://registry.npmjs.org/once
+154 verbose headers { date: 'Sat, 19 Nov 2016 10:58:29 GMT',
+154 verbose headers   via: '1.1 varnish',
+154 verbose headers   'cache-control': 'max-age=300',
+154 verbose headers   etag: 'W/"582dbc11-2579"',
+154 verbose headers   age: '166',
+154 verbose headers   connection: 'keep-alive',
+154 verbose headers   'x-served-by': 'cache-lhr6320-LHR',
+154 verbose headers   'x-cache': 'HIT',
+154 verbose headers   'x-cache-hits': '9',
+154 verbose headers   'x-timer': 'S1479553109.539604,VS0,VE0',
+154 verbose headers   vary: 'Accept-Encoding' }
+155 silly get cb [ 304,
+155 silly get   { date: 'Sat, 19 Nov 2016 10:58:29 GMT',
+155 silly get     via: '1.1 varnish',
+155 silly get     'cache-control': 'max-age=300',
+155 silly get     etag: 'W/"582dbc11-2579"',
+155 silly get     age: '166',
+155 silly get     connection: 'keep-alive',
+155 silly get     'x-served-by': 'cache-lhr6320-LHR',
+155 silly get     'x-cache': 'HIT',
+155 silly get     'x-cache-hits': '9',
+155 silly get     'x-timer': 'S1479553109.539604,VS0,VE0',
+155 silly get     vary: 'Accept-Encoding' } ]
+156 verbose etag https://registry.npmjs.org/once from cache
+157 verbose get saving once to /Users/jerre/.npm/registry.npmjs.org/once/.cache.json
+158 verbose correctMkdir /Users/jerre/.npm correctMkdir not in flight; initializing
+159 silly addNameRange number 2 { name: 'once', range: '>=1.3.0 <2.0.0', hasData: true }
+160 silly addNameRange versions [ 'once',
+160 silly addNameRange   [ '1.1.1', '1.2.0', '1.3.0', '1.3.1', '1.3.2', '1.3.3', '1.4.0' ] ]
+161 silly addNamed once@1.4.0
+162 verbose addNamed "1.4.0" is a plain semver version for once
+163 silly cache afterAdd once@1.4.0
+164 verbose afterAdd /Users/jerre/.npm/once/1.4.0/package/package.json not in flight; writing
+165 verbose correctMkdir /Users/jerre/.npm correctMkdir not in flight; initializing
+166 verbose afterAdd /Users/jerre/.npm/once/1.4.0/package/package.json written
+167 http 304 https://registry.npmjs.org/xtend
+168 verbose headers { date: 'Sat, 19 Nov 2016 10:58:29 GMT',
+168 verbose headers   via: '1.1 varnish',
+168 verbose headers   'cache-control': 'max-age=300',
+168 verbose headers   etag: 'W/"582bc4e2-51e0"',
+168 verbose headers   age: '225',
+168 verbose headers   connection: 'keep-alive',
+168 verbose headers   'x-served-by': 'cache-lhr6337-LHR',
+168 verbose headers   'x-cache': 'HIT',
+168 verbose headers   'x-cache-hits': '3',
+168 verbose headers   'x-timer': 'S1479553109.568555,VS0,VE0',
+168 verbose headers   vary: 'Accept-Encoding' }
+169 silly get cb [ 304,
+169 silly get   { date: 'Sat, 19 Nov 2016 10:58:29 GMT',
+169 silly get     via: '1.1 varnish',
+169 silly get     'cache-control': 'max-age=300',
+169 silly get     etag: 'W/"582bc4e2-51e0"',
+169 silly get     age: '225',
+169 silly get     connection: 'keep-alive',
+169 silly get     'x-served-by': 'cache-lhr6337-LHR',
+169 silly get     'x-cache': 'HIT',
+169 silly get     'x-cache-hits': '3',
+169 silly get     'x-timer': 'S1479553109.568555,VS0,VE0',
+169 silly get     vary: 'Accept-Encoding' } ]
+170 verbose etag https://registry.npmjs.org/xtend from cache
+171 verbose get saving xtend to /Users/jerre/.npm/registry.npmjs.org/xtend/.cache.json
+172 verbose correctMkdir /Users/jerre/.npm correctMkdir not in flight; initializing
+173 silly addNameRange number 2 { name: 'xtend', range: '>=3.0.0 <4.0.0', hasData: true }
+174 silly addNameRange versions [ 'xtend',
+174 silly addNameRange   [ '1.0.0',
+174 silly addNameRange     '1.0.1',
+174 silly addNameRange     '1.0.2',
+174 silly addNameRange     '1.0.3',
+174 silly addNameRange     '2.0.1',
+174 silly addNameRange     '2.0.2',
+174 silly addNameRange     '2.0.3',
+174 silly addNameRange     '2.0.4',
+174 silly addNameRange     '2.0.5',
+174 silly addNameRange     '2.0.6',
+174 silly addNameRange     '2.1.1',
+174 silly addNameRange     '2.1.2',
+174 silly addNameRange     '2.2.0',
+174 silly addNameRange     '3.0.0',
+174 silly addNameRange     '4.0.0',
+174 silly addNameRange     '4.0.1' ] ]
+175 silly addNamed xtend@3.0.0
+176 verbose addNamed "3.0.0" is a plain semver version for xtend
+177 silly cache afterAdd xtend@3.0.0
+178 verbose afterAdd /Users/jerre/.npm/xtend/3.0.0/package/package.json not in flight; writing
+179 verbose correctMkdir /Users/jerre/.npm correctMkdir not in flight; initializing
+180 verbose afterAdd /Users/jerre/.npm/xtend/3.0.0/package/package.json written
+181 silly install resolved [ { name: 'once',
+181 silly install resolved     version: '1.4.0',
+181 silly install resolved     description: 'Run a function exactly one time',
+181 silly install resolved     main: 'once.js',
+181 silly install resolved     directories: { test: 'test' },
+181 silly install resolved     dependencies: { wrappy: '1' },
+181 silly install resolved     devDependencies: { tap: '^7.0.1' },
+181 silly install resolved     scripts: { test: 'tap test/*.js' },
+181 silly install resolved     files: [ 'once.js' ],
+181 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/once.git' },
+181 silly install resolved     keywords: [ 'once', 'function', 'one', 'single' ],
+181 silly install resolved     author:
+181 silly install resolved      { name: 'Isaac Z. Schlueter',
+181 silly install resolved        email: 'i@izs.me',
+181 silly install resolved        url: 'http://blog.izs.me/' },
+181 silly install resolved     license: 'ISC',
+181 silly install resolved     gitHead: '0e614d9f5a7e6f0305c625f6b581f6d80b33b8a6',
+181 silly install resolved     bugs: { url: 'https://github.com/isaacs/once/issues' },
+181 silly install resolved     homepage: 'https://github.com/isaacs/once#readme',
+181 silly install resolved     _id: 'once@1.4.0',
+181 silly install resolved     _shasum: '583b1aa775961d4b113ac17d9c50baef9dd76bd1',
+181 silly install resolved     _from: 'once@>=1.3.0 <2.0.0',
+181 silly install resolved     _npmVersion: '3.10.7',
+181 silly install resolved     _nodeVersion: '6.5.0',
+181 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+181 silly install resolved     dist:
+181 silly install resolved      { shasum: '583b1aa775961d4b113ac17d9c50baef9dd76bd1',
+181 silly install resolved        tarball: 'https://registry.npmjs.org/once/-/once-1.4.0.tgz' },
+181 silly install resolved     maintainers: [ [Object] ],
+181 silly install resolved     _npmOperationalInternal:
+181 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+181 silly install resolved        tmp: 'tmp/once-1.4.0.tgz_1473196269128_0.537820661207661' },
+181 silly install resolved     _resolved: 'https://registry.npmjs.org/once/-/once-1.4.0.tgz',
+181 silly install resolved     readme: 'ERROR: No README data found!' },
+181 silly install resolved   { name: 'xtend',
+181 silly install resolved     version: '3.0.0',
+181 silly install resolved     description: 'extend like a boss',
+181 silly install resolved     keywords: [ 'extend', 'merge', 'options', 'opts', 'object', 'array' ],
+181 silly install resolved     author: { name: 'Raynos', email: 'raynos2@gmail.com' },
+181 silly install resolved     repository: { type: 'git', url: 'git://github.com/Raynos/xtend.git' },
+181 silly install resolved     main: 'index',
+181 silly install resolved     scripts: { test: 'node test' },
+181 silly install resolved     dependencies: {},
+181 silly install resolved     devDependencies: { tape: '~1.1.0' },
+181 silly install resolved     homepage: 'https://github.com/Raynos/xtend',
+181 silly install resolved     contributors: [ [Object], [Object] ],
+181 silly install resolved     bugs:
+181 silly install resolved      { url: 'https://github.com/Raynos/xtend/issues',
+181 silly install resolved        email: 'raynos2@gmail.com' },
+181 silly install resolved     licenses: [ [Object] ],
+181 silly install resolved     testling: { files: 'test.js', browsers: [Object] },
+181 silly install resolved     engines: { node: '>=0.4' },
+181 silly install resolved     _id: 'xtend@3.0.0',
+181 silly install resolved     dist:
+181 silly install resolved      { shasum: '5cce7407baf642cba7becda568111c493f59665a',
+181 silly install resolved        tarball: 'https://registry.npmjs.org/xtend/-/xtend-3.0.0.tgz' },
+181 silly install resolved     _from: 'xtend@>=3.0.0 <4.0.0',
+181 silly install resolved     _npmVersion: '1.4.6',
+181 silly install resolved     _npmUser: { name: 'raynos', email: 'raynos2@gmail.com' },
+181 silly install resolved     maintainers: [ [Object] ],
+181 silly install resolved     directories: {},
+181 silly install resolved     _shasum: '5cce7407baf642cba7becda568111c493f59665a',
+181 silly install resolved     _resolved: 'https://registry.npmjs.org/xtend/-/xtend-3.0.0.tgz',
+181 silly install resolved     readme: 'ERROR: No README data found!' } ]
+182 info install once@1.4.0 into /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream
+183 info install xtend@3.0.0 into /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream
+184 info installOne once@1.4.0
+185 verbose installOne of once to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream not in flight; installing
+186 verbose correctMkdir /Users/jerre/.npm/_locks correctMkdir not in flight; initializing
+187 info installOne xtend@3.0.0
+188 verbose installOne of xtend to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream not in flight; installing
+189 verbose correctMkdir /Users/jerre/.npm/_locks correctMkdir not in flight; initializing
+190 verbose lock using /Users/jerre/.npm/_locks/once-7899eaae680de419.lock for /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once
+191 verbose lock using /Users/jerre/.npm/_locks/xtend-9290ad251cf5f615.lock for /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/xtend
+192 silly install write writing once 1.4.0 to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once
+193 silly install write writing xtend 3.0.0 to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/xtend
+194 verbose unbuild node_modules/graphicsmagick-stream/node_modules/once
+195 verbose unbuild node_modules/graphicsmagick-stream/node_modules/xtend
+196 silly gentlyRm /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once is being purged from base /Users/jerre/workspaces/sohei-nishino/axel_willem
+197 verbose gentlyRm don't care about contents; nuking /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once
+198 verbose tar unpack /Users/jerre/.npm/once/1.4.0/package.tgz
+199 verbose tar unpacking to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once
+200 silly gentlyRm /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once is being purged
+201 verbose gentlyRm don't care about contents; nuking /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once
+202 silly gentlyRm /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/xtend is being purged from base /Users/jerre/workspaces/sohei-nishino/axel_willem
+203 verbose gentlyRm don't care about contents; nuking /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/xtend
+204 silly gunzTarPerm modes [ '755', '644' ]
+205 verbose tar unpack /Users/jerre/.npm/xtend/3.0.0/package.tgz
+206 verbose tar unpacking to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/xtend
+207 silly gentlyRm /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/xtend is being purged
+208 verbose gentlyRm don't care about contents; nuking /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/xtend
+209 silly gunzTarPerm modes [ '755', '644' ]
+210 silly gunzTarPerm extractEntry package.json
+211 silly gunzTarPerm extractEntry package.json
+212 silly gunzTarPerm extractEntry README.md
+213 silly gunzTarPerm extractEntry LICENSE
+214 silly gunzTarPerm extractEntry .npmignore
+215 silly gunzTarPerm extractEntry README.md
+216 silly gunzTarPerm extractEntry once.js
+217 silly gunzTarPerm extractEntry LICENCE
+218 silly gunzTarPerm extractEntry index.js
+219 silly gunzTarPerm extractEntry mutable.js
+220 silly gunzTarPerm extractEntry test.js
+221 silly gunzTarPerm extractEntry .jshintrc
+222 silly gunzTarPerm extractEntry Makefile
+223 verbose write writing to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/package.json
+224 info preinstall once@1.4.0
+225 verbose readDependencies loading dependencies from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/package.json
+226 silly prepareForInstallMany adding wrappy@1 from once dependencies
+227 verbose readDependencies loading dependencies from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/package.json
+228 silly cache add args [ 'wrappy@1', null ]
+229 verbose cache add spec wrappy@1
+230 silly cache add parsed spec Result {
+230 silly cache add   raw: 'wrappy@1',
+230 silly cache add   scope: null,
+230 silly cache add   name: 'wrappy',
+230 silly cache add   rawSpec: '1',
+230 silly cache add   spec: '>=1.0.0 <2.0.0',
+230 silly cache add   type: 'range' }
+231 silly addNamed wrappy@>=1.0.0 <2.0.0
+232 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for wrappy
+233 silly addNameRange { name: 'wrappy', range: '>=1.0.0 <2.0.0', hasData: false }
+234 silly mapToRegistry name wrappy
+235 silly mapToRegistry using default registry
+236 silly mapToRegistry registry https://registry.npmjs.org/
+237 silly mapToRegistry data Result {
+237 silly mapToRegistry   raw: 'wrappy',
+237 silly mapToRegistry   scope: null,
+237 silly mapToRegistry   name: 'wrappy',
+237 silly mapToRegistry   rawSpec: '',
+237 silly mapToRegistry   spec: 'latest',
+237 silly mapToRegistry   type: 'tag' }
+238 silly mapToRegistry uri https://registry.npmjs.org/wrappy
+239 verbose addNameRange registry:https://registry.npmjs.org/wrappy not in flight; fetching
+240 verbose request uri https://registry.npmjs.org/wrappy
+241 verbose request no auth needed
+242 info attempt registry request try #1 at 11:58:29 AM
+243 verbose etag W/"5818e387-11a5"
+244 verbose lastModified Tue, 01 Nov 2016 18:48:39 GMT
+245 http request GET https://registry.npmjs.org/wrappy
+246 verbose write writing to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/xtend/package.json
+247 info preinstall xtend@3.0.0
+248 verbose readDependencies loading dependencies from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/xtend/package.json
+249 verbose readDependencies loading dependencies from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/xtend/package.json
+250 silly install resolved []
+251 verbose about to build /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/xtend
+252 info build /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/xtend
+253 info linkStuff xtend@3.0.0
+254 silly linkStuff xtend@3.0.0 has /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules as its parent node_modules
+255 verbose linkBins xtend@3.0.0
+256 verbose linkMans xtend@3.0.0
+257 verbose rebuildBundles xtend@3.0.0
+258 info install xtend@3.0.0
+259 info postinstall xtend@3.0.0
+260 verbose unlock done using /Users/jerre/.npm/_locks/xtend-9290ad251cf5f615.lock for /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/xtend
+261 http 304 https://registry.npmjs.org/wrappy
+262 verbose headers { date: 'Sat, 19 Nov 2016 10:58:29 GMT',
+262 verbose headers   via: '1.1 varnish',
+262 verbose headers   'cache-control': 'max-age=300',
+262 verbose headers   etag: 'W/"5818e387-11a5"',
+262 verbose headers   age: '242',
+262 verbose headers   connection: 'keep-alive',
+262 verbose headers   'x-served-by': 'cache-lhr6320-LHR',
+262 verbose headers   'x-cache': 'HIT',
+262 verbose headers   'x-cache-hits': '6',
+262 verbose headers   'x-timer': 'S1479553109.622120,VS0,VE0',
+262 verbose headers   vary: 'Accept-Encoding' }
+263 silly get cb [ 304,
+263 silly get   { date: 'Sat, 19 Nov 2016 10:58:29 GMT',
+263 silly get     via: '1.1 varnish',
+263 silly get     'cache-control': 'max-age=300',
+263 silly get     etag: 'W/"5818e387-11a5"',
+263 silly get     age: '242',
+263 silly get     connection: 'keep-alive',
+263 silly get     'x-served-by': 'cache-lhr6320-LHR',
+263 silly get     'x-cache': 'HIT',
+263 silly get     'x-cache-hits': '6',
+263 silly get     'x-timer': 'S1479553109.622120,VS0,VE0',
+263 silly get     vary: 'Accept-Encoding' } ]
+264 verbose etag https://registry.npmjs.org/wrappy from cache
+265 verbose get saving wrappy to /Users/jerre/.npm/registry.npmjs.org/wrappy/.cache.json
+266 verbose correctMkdir /Users/jerre/.npm correctMkdir not in flight; initializing
+267 silly addNameRange number 2 { name: 'wrappy', range: '>=1.0.0 <2.0.0', hasData: true }
+268 silly addNameRange versions [ 'wrappy', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+269 silly addNamed wrappy@1.0.2
+270 verbose addNamed "1.0.2" is a plain semver version for wrappy
+271 silly cache afterAdd wrappy@1.0.2
+272 verbose afterAdd /Users/jerre/.npm/wrappy/1.0.2/package/package.json not in flight; writing
+273 verbose correctMkdir /Users/jerre/.npm correctMkdir not in flight; initializing
+274 verbose afterAdd /Users/jerre/.npm/wrappy/1.0.2/package/package.json written
+275 silly install resolved [ { name: 'wrappy',
+275 silly install resolved     version: '1.0.2',
+275 silly install resolved     description: 'Callback wrapping utility',
+275 silly install resolved     main: 'wrappy.js',
+275 silly install resolved     files: [ 'wrappy.js' ],
+275 silly install resolved     directories: { test: 'test' },
+275 silly install resolved     dependencies: {},
+275 silly install resolved     devDependencies: { tap: '^2.3.1' },
+275 silly install resolved     scripts: { test: 'tap --coverage test/*.js' },
+275 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/npm/wrappy.git' },
+275 silly install resolved     author:
+275 silly install resolved      { name: 'Isaac Z. Schlueter',
+275 silly install resolved        email: 'i@izs.me',
+275 silly install resolved        url: 'http://blog.izs.me/' },
+275 silly install resolved     license: 'ISC',
+275 silly install resolved     bugs: { url: 'https://github.com/npm/wrappy/issues' },
+275 silly install resolved     homepage: 'https://github.com/npm/wrappy',
+275 silly install resolved     readme: '# wrappy\n\nCallback wrapping utility\n\n## USAGE\n\n```javascript\nvar wrappy = require("wrappy")\n\n// var wrapper = wrappy(wrapperFunction)\n\n// make sure a cb is called only once\n// See also: http://npm.im/once for this specific use case\nvar once = wrappy(function (cb) {\n  var called = false\n  return function () {\n    if (called) return\n    called = true\n    return cb.apply(this, arguments)\n  }\n})\n\nfunction printBoo () {\n  console.log(\'boo\')\n}\n// has some rando property\nprintBoo.iAmBooPrinter = true\n\nvar onlyPrintOnce = once(printBoo)\n\nonlyPrintOnce() // prints \'boo\'\nonlyPrintOnce() // does nothing\n\n// random property is retained!\nassert.equal(onlyPrintOnce.iAmBooPrinter, true)\n```\n',
+275 silly install resolved     readmeFilename: 'README.md',
+275 silly install resolved     _id: 'wrappy@1.0.2',
+275 silly install resolved     _shasum: 'b5243d8f3ec1aa35f1364605bc0d1036e30ab69f',
+275 silly install resolved     _resolved: 'https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz',
+275 silly install resolved     _from: 'wrappy@>=1.0.0 <2.0.0' } ]
+276 info install wrappy@1.0.2 into /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once
+277 info installOne wrappy@1.0.2
+278 verbose installOne of wrappy to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once not in flight; installing
+279 verbose correctMkdir /Users/jerre/.npm/_locks correctMkdir not in flight; initializing
+280 verbose lock using /Users/jerre/.npm/_locks/wrappy-d9e92aca26d5b32a.lock for /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/node_modules/wrappy
+281 silly install write writing wrappy 1.0.2 to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/node_modules/wrappy
+282 verbose unbuild node_modules/graphicsmagick-stream/node_modules/once/node_modules/wrappy
+283 silly gentlyRm /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/node_modules/wrappy is being purged from base /Users/jerre/workspaces/sohei-nishino/axel_willem
+284 verbose gentlyRm don't care about contents; nuking /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/node_modules/wrappy
+285 verbose tar unpack /Users/jerre/.npm/wrappy/1.0.2/package.tgz
+286 verbose tar unpacking to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/node_modules/wrappy
+287 silly gentlyRm /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/node_modules/wrappy is being purged
+288 verbose gentlyRm don't care about contents; nuking /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/node_modules/wrappy
+289 silly gunzTarPerm modes [ '755', '644' ]
+290 silly gunzTarPerm extractEntry package.json
+291 silly gunzTarPerm extractEntry README.md
+292 silly gunzTarPerm extractEntry LICENSE
+293 silly gunzTarPerm extractEntry wrappy.js
+294 verbose write writing to /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/node_modules/wrappy/package.json
+295 info preinstall wrappy@1.0.2
+296 verbose readDependencies loading dependencies from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/node_modules/wrappy/package.json
+297 verbose readDependencies loading dependencies from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/node_modules/wrappy/package.json
+298 silly install resolved []
+299 verbose about to build /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/node_modules/wrappy
+300 info build /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/node_modules/wrappy
+301 info linkStuff wrappy@1.0.2
+302 silly linkStuff wrappy@1.0.2 has /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/node_modules as its parent node_modules
+303 verbose linkBins wrappy@1.0.2
+304 verbose linkMans wrappy@1.0.2
+305 verbose rebuildBundles wrappy@1.0.2
+306 info install wrappy@1.0.2
+307 info postinstall wrappy@1.0.2
+308 verbose unlock done using /Users/jerre/.npm/_locks/wrappy-d9e92aca26d5b32a.lock for /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once/node_modules/wrappy
+309 verbose about to build /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once
+310 info build /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once
+311 info linkStuff once@1.4.0
+312 silly linkStuff once@1.4.0 has /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules as its parent node_modules
+313 verbose linkBins once@1.4.0
+314 verbose linkMans once@1.4.0
+315 verbose rebuildBundles once@1.4.0
+316 verbose rebuildBundles [ 'wrappy' ]
+317 info install once@1.4.0
+318 info postinstall once@1.4.0
+319 verbose unlock done using /Users/jerre/.npm/_locks/once-7899eaae680de419.lock for /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream/node_modules/once
+320 verbose about to build /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream
+321 info build /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream
+322 info linkStuff graphicsmagick-stream@2.1.2
+323 silly linkStuff graphicsmagick-stream@2.1.2 has /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules as its parent node_modules
+324 verbose linkBins graphicsmagick-stream@2.1.2
+325 verbose linkMans graphicsmagick-stream@2.1.2
+326 verbose rebuildBundles graphicsmagick-stream@2.1.2
+327 verbose rebuildBundles [ 'once', 'xtend' ]
+328 info install graphicsmagick-stream@2.1.2
+329 verbose unsafe-perm in lifecycle true
+330 info graphicsmagick-stream@2.1.2 Failed to exec install script
+331 verbose unlock done using /Users/jerre/.npm/_locks/graphicsmagick-stream-bdf5d7a7265895a7.lock for /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream
+332 verbose stack Error: graphicsmagick-stream@2.1.2 install: `make`
+332 verbose stack Exit status 2
+332 verbose stack     at EventEmitter.<anonymous> (/Users/jerre/.nvm/versions/node/v4.4.5/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
+332 verbose stack     at emitTwo (events.js:87:13)
+332 verbose stack     at EventEmitter.emit (events.js:172:7)
+332 verbose stack     at ChildProcess.<anonymous> (/Users/jerre/.nvm/versions/node/v4.4.5/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+332 verbose stack     at emitTwo (events.js:87:13)
+332 verbose stack     at ChildProcess.emit (events.js:172:7)
+332 verbose stack     at maybeClose (internal/child_process.js:827:16)
+332 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+333 verbose pkgid graphicsmagick-stream@2.1.2
+334 verbose cwd /Users/jerre/workspaces/sohei-nishino/axel_willem
+335 error Darwin 15.6.0
+336 error argv "/Users/jerre/.nvm/versions/node/v4.4.5/bin/node" "/Users/jerre/.nvm/versions/node/v4.4.5/bin/npm" "install" "graphicsmagick-stream" "--save"
+337 error node v4.4.5
+338 error npm  v2.15.5
+339 error code ELIFECYCLE
+340 error graphicsmagick-stream@2.1.2 install: `make`
+340 error Exit status 2
+341 error Failed at the graphicsmagick-stream@2.1.2 install script 'make'.
+341 error This is most likely a problem with the graphicsmagick-stream package,
+341 error not with npm itself.
+341 error Tell the author that this fails on your system:
+341 error     make
+341 error You can get information on how to open an issue for this project with:
+341 error     npm bugs graphicsmagick-stream
+341 error Or if that isn't available, you can get their info via:
+341 error
+341 error     npm owner ls graphicsmagick-stream
+341 error There is likely additional logging output above.
+342 verbose exit [ 1, true ]
+343 verbose unbuild node_modules/graphicsmagick-stream
+344 info preuninstall graphicsmagick-stream@2.1.2
+345 info uninstall graphicsmagick-stream@2.1.2
+346 verbose unbuild rmStuff graphicsmagick-stream@2.1.2 from /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules
+347 info postuninstall graphicsmagick-stream@2.1.2
+348 silly gentlyRm /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream is being purged from base /Users/jerre/workspaces/sohei-nishino/axel_willem
+349 verbose gentlyRm don't care about contents; nuking /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream
+350 silly vacuum-fs purging /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules/graphicsmagick-stream
+351 silly vacuum-fs quitting because other entries in /Users/jerre/workspaces/sohei-nishino/axel_willem/node_modules

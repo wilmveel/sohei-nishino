@@ -20,7 +20,7 @@ function encoder(options) {
 
     console.log('hw', h,w);
 
-    canvas = gm(h, w, "#FFFFFF").stroke("#000000")
+    canvas = gm(w, h, "#FFFFFF").stroke("#000000")
 
     Transform.call(this, options);
 }
@@ -28,6 +28,8 @@ function encoder(options) {
 inherits(encoder, Transform);
 
 encoder.prototype._transform = function _transform(json, encoding, callback) {
+
+    console.log(json)
 
     var obj = JSON.parse(json);
 

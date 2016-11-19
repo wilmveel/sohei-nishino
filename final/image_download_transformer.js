@@ -21,17 +21,19 @@ encoder.prototype._transform = function _transform(streamobj, encoding, callback
     var obj = JSON.parse(streamobj);
     var self = this;
 
+    var size = '20x20';
+
     try {
         var options = {
             host: "maps.googleapis.com",
             port: 443,
-            path: '/maps/api/streetview?size=50x100&location=' + obj.lat + ',' + obj.lon + '&heading=' + '150' + '&pitch=-10.0&key=AIzaSyDi_lcmV9GQWGgPrqLQS31hmjpNATGhets',
+            path: '/maps/api/streetview?size=' + size + '&location=' + obj.lat + ',' + obj.lon + '&heading=' + '150' + '&pitch=-10.0&key=AIzaSyDi_lcmV9GQWGgPrqLQS31hmjpNATGhets',
             method: 'GET'
         };
 
         console.log(options.path);
 
-        var imageName = './images/image' + obj.lat + '-' + obj.lon + '.jpg';
+        var imageName = './images/image' + obj.lat + '-' + obj.lon + '-' +  size +'.jpg';
         try {
             fs.accessSync(imageName, fs.F_OK);
             var cachedFile = fs.readFileSync(imageName);

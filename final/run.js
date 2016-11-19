@@ -6,23 +6,32 @@ var xmlTransformer = require('./xml_transformer');
 var xyTransformer = require('./xy_transformer');
 var imageDownloadTransformer = require('./image_download_transformer');
 var pixelTransformer = require('./pixel_transformer');
+var dataErosionTransformer = require('./data_erosion_transformer')
 
-var bbox = {
-    n: 52.0109,
-    w: 4.9507,
-    s: 52.1510,
-    e: 5.2484
+
+var bbox_amsterdam = {
+    n: 52.3535,
+    w: 4.8681,
+    s: 52.3878,
+    e: 4.9402
 };
+
+var bbox_utrecht = {
+    n: 52.0119,
+    w: 4.9126,
+    s: 52.1501,
+    e: 5.2868
+};
+
 
 var scale = 10000;
 
 var options = {
-    bbox: bbox,
+    bbox: bbox_utrecht,
     scale: scale
 };
 
-var query = '(way(52.0109,4.9507,52.1510,5.2484)[highway=primary]);node(w);out;';
-
+var query = '(way(' + options.bbox.n + ',' + options.bbox.w + ',' + options.bbox.s + ',' + options.bbox.e + ')["highway"~"primary"]);node(w);out;';
 
 
 request
@@ -32,6 +41,7 @@ request
     })
     .pipe(byline())
     .pipe(xmlTransformer())
+    .pipe(dataErosionTransformer(options))
     .pipe(xyTransformer(options))
     .pipe(imageDownloadTransformer(options))
     // .pipe(fs.createWriteStream('osm_high.xml'))

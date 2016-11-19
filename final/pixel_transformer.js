@@ -2,6 +2,7 @@ var Transform = require('stream').Transform;
 var inherits = require('util').inherits;
 
 var gm = require('gm');
+var fs = require('fs');
 
 var canvas;
 
@@ -13,14 +14,14 @@ function encoder(options) {
 
     if (!options) options = {};
 
-    console.log('options: ', options)
+    console.log('options: ', options);
 
     var h = Math.round((options.bbox.s - options.bbox.n) * options.scale);
     var w = Math.round((options.bbox.e - options.bbox.w) * options.scale);
 
     console.log('hw', h,w);
 
-    canvas = gm(w, h, "#FFFFFF").stroke("#000000")
+    canvas = gm(w, h, "#FFFFFF").stroke("#000000");
 
     Transform.call(this, options);
 }
@@ -29,12 +30,16 @@ inherits(encoder, Transform);
 
 encoder.prototype._transform = function _transform(json, encoding, callback) {
 
-    console.log(json)
-
     var obj = JSON.parse(json);
 
+    var file = new Buffer(obj.img, 'base64');
+    var lompeZooi = './lomp/' + obj.lat + '-' + obj.lon + '.jpg';
+
+    fs.writeFileSync(lompeZooi, file);
+
     if(obj.x && obj.y){
-        canvas.drawCircle(obj.x, obj.y, obj.x+1, obj.y +1);
+        canvas.in('-page', '+' + obj.x + '+' + obj.y).in(lompeZooi);
+        canvas.mosaic(); // Merges the images as a matrix
     }
 
     callback();
@@ -42,8 +47,7 @@ encoder.prototype._transform = function _transform(json, encoding, callback) {
 
 
 encoder.prototype._flush = function (cb) {
-    console.log('JOLO')
-    var fs = require('fs');
+    console.log('JOLO');
 
     canvas
         .write(__dirname + '/jolo.jpg', function (error) {

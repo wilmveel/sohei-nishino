@@ -24,7 +24,7 @@ encoder.prototype._transform = function _transform(line, encoding, callback) {
             id : match[1],
             lat : match[2],
             lon : match[3]
-        }
+        };
         this.push(JSON.stringify(obj));
     }
 

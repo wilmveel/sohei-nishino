@@ -25,27 +25,38 @@ encoder.prototype._transform = function _transform(streamobj, encoding, callback
         var options = {
             host: "maps.googleapis.com",
             port: 443,
-            path: '/maps/api/streetview?size=50x100&location=' + obj.lon + ',' + obj.lat + '&heading=' + '150' + '&pitch=-10.0&key=AIzaSyDi_lcmV9GQWGgPrqLQS31hmjpNATGhets',
+            path: '/maps/api/streetview?size=50x100&location=' + obj.lat + ',' + obj.lon + '&heading=' + '150' + '&pitch=-10.0&key=AIzaSyDi_lcmV9GQWGgPrqLQS31hmjpNATGhets',
             method: 'GET'
         };
 
         console.log(options.path);
 
-        https.get(options, function (res) {
-            var imagedata = new Buffer(0);
+        var imageName = './images/image' + obj.lat + '-' + obj.lon + '.jpg';
+        try {
+            fs.accessSync(imageName, fs.F_OK);
+            var cachedFile = fs.readFileSync(imageName);
+            obj.img = cachedFile.toString('base64');
+            console.log('image\n', obj.img, '\n\n');
+            self.push(JSON.stringify(obj));
+            callback();
+        } catch (e) {
+            https.get(options, function (res) {
+                var imagedata = new Buffer(0);
 
-            res.on('data', function (chunk) {
-                imagedata = Buffer.concat([imagedata, chunk]);
-            });
+                res.on('data', function (chunk) {
+                    imagedata = Buffer.concat([imagedata, chunk]);
+                });
 
-            res.on('end', function () {
-                obj.img = imagedata.toString("base64");
-                self.push(JSON.stringify(obj));
-                callback();
+                res.on('end', function () {
+                    fs.writeFileSync(imageName, imagedata);
+                    obj.img = imagedata.toString("base64");
+                    self.push(JSON.stringify(obj));
+                    callback();
+                });
+            }).on('error', function (e) {
+                console.error(e);
             });
-        }).on('error', function (e) {
-            console.error(e);
-        });
+        }
 
     } catch (err) {
         return callback(err);

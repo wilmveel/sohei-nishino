@@ -17,12 +17,11 @@ inherits(encoder, Transform);
 
 encoder.prototype._transform = function _transform(json, encoding, callback) {
 
-    var obj = JSON.parse(json);
-    obj.x = obj.lat;
-    obj.y = obj.lon;
-    console.log(obj)
+    var bbox = opts.bbox;
 
-    console.log(opts)
+    var obj = JSON.parse(json);
+    obj.x = Math.round((obj.lon - opts.bbox.w) * opts.scale);
+    obj.y = Math.round((obj.lat - opts.bbox.n) * opts.scale);
 
     this.push(JSON.stringify(obj));
 

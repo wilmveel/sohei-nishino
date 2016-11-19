@@ -2,7 +2,19 @@ var request = require('request');
 var fs = require('fs')
 var byline = require('byline')
 
-var parse = require('./xmltransformer');
+var xmlTransformer = require('./xml_transformer');
+var xyTransformer = require('./xy_transformer');
+
+var bbox = {
+    n: 52.0109,
+    w: 4.9507,
+    s: 52.1510,
+    e: 5.2484
+};
+
+var options = {
+    bbox: bbox
+};
 
 var query = '(way(52.0109,4.9507,52.1510,5.2484)[highway=primary]);node(w);out;';
 
@@ -14,5 +26,6 @@ request
         data: query
     })
     .pipe(byline())
-    .pipe(parse())
+    .pipe(xmlTransformer())
+    .pipe(xyTransformer(options))
     .pipe(fs.createWriteStream('osm_high.xml'));

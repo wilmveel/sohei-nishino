@@ -1,3 +1,5 @@
+var streetFighter = require('./src/SoheiStreetFighter');
+
 module.exports = {
-    streetviewApi: require('./src/SoheiStreetFighter')
+    streetviewApi: streetFighter
 };

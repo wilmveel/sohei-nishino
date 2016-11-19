@@ -1,11 +1,12 @@
 var express = require('express');
 var app = express();
 
-var api = require('./index').streetviewApi
+var port = 3000;
+
+var api = require('./index').streetviewApi;
 
 app.use('/api', api);
 
-app.listen(3000, function () {
-    console.log('User API listening on port 3000!');
+app.listen(port, function () {
+    console.log('User API listening on port: ' + port);
 });
-

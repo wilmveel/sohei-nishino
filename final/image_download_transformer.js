@@ -3,6 +3,8 @@ var inherits = require('util').inherits;
 var https = require('https');
 var fs = require('fs');
 
+var size = 20;
+
 module.exports = encoder;
 
 function encoder(options) {
@@ -25,7 +27,7 @@ encoder.prototype._transform = function _transform(streamobj, encoding, callback
         var options = {
             host: "maps.googleapis.com",
             port: 443,
-            path: '/maps/api/streetview?size=50x100&location=' + obj.lat + ',' + obj.lon + '&heading=' + '150' + '&pitch=-10.0&key=AIzaSyDi_lcmV9GQWGgPrqLQS31hmjpNATGhets',
+            path: '/maps/api/streetview?size=' + size + 'x' + (size * 2) + '&location=' + obj.lat + ',' + obj.lon + '&heading=' + '150' + '&pitch=-10.0&key=AIzaSyDi_lcmV9GQWGgPrqLQS31hmjpNATGhets',
             method: 'GET'
         };
 

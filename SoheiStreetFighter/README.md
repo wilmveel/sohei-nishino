@@ -1,10 +1,8 @@
 ##install depencies
-npm install express --save
-npm install body-parser --save
-npm install gm --save
+npm i
 
 ##run
-node server.js
+npm start
 
 ##test
 http://localhost:3000/api/city

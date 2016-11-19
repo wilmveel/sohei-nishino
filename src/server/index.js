@@ -9,7 +9,7 @@ var file = fs.readFileSync('./images/sanfrancisco_-s-.jpg');
 
 var Canvas = require('canvas');
 var Image = Canvas.Image;
-var canvas = new Canvas(200, 200);
+var canvas = new Canvas(2000, 2000);
 var ctx = canvas.getContext('2d');
 
 var img = new Image;

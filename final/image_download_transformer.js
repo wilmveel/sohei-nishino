@@ -25,20 +25,21 @@ encoder.prototype._transform = function _transform(streamobj, encoding, callback
         var options = {
             host: "maps.googleapis.com",
             port: 443,
-            path: '/maps/api/streetview?size=50x100&location=' + obj.long + ',' + obj.lat + '&heading=' + obj.heading + '&pitch=-10.0&key=AIzaSyDi_lcmV9GQWGgPrqLQS31hmjpNATGhets',
+            path: '/maps/api/streetview?size=50x100&location=' + obj.lon + ',' + obj.lat + '&heading=' + '150' + '&pitch=-10.0&key=AIzaSyDi_lcmV9GQWGgPrqLQS31hmjpNATGhets',
             method: 'GET'
         };
 
+        console.log(options.path);
+
         https.get(options, function (res) {
-            var imagedata = '';
-            res.setEncoding('binary');
+            var imagedata = new Buffer(0);
 
             res.on('data', function (chunk) {
-                imagedata += chunk
+                imagedata = Buffer.concat([imagedata, chunk]);
             });
 
             res.on('end', function () {
-                obj.img = new Buffer(imagedata).toString("base64");
+                obj.img = imagedata.toString("base64");
                 self.push(JSON.stringify(obj));
                 callback();
             });

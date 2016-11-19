@@ -1,8 +1,8 @@
 var Transform = require('stream').Transform;
 var inherits = require('util').inherits;
-var https = require('https');
 var fs = require('fs');
-var Canvas = require('canvas');
+var gm = require('gm');
+
 
 function encoder(options) {
     if ( ! (this instanceof encoder))
@@ -18,28 +18,22 @@ inherits(encoder, Transform);
 encoder.prototype._transform = function _transform(obj, encoding, callback) {
 
     try {
-        var file = 'data:image/png;base64,' + obj.img;
+        var file = new Buffer(obj.img, 'base64');
+        // var file = {lat:1, lng:1, x:50, y:0,   img:'./images/image52.108416-5.0890658.jpg'};
 
-        console.log(file);
-        // var Image = Canvas.Image;
-        // var canvas = new Canvas(2000, 2000);
-        // var ctx = canvas.getContext('2d');
+        console.log(obj.img);
 
-        // var img = new Image;
-        // img.src = file;
+        var x = gm();
+        x.in('-page', '+' + obj.x + '+' + obj.y).in(file);
+        x.mosaic()  // Merges the images as a matrix
+            .stream('png', function streamOut (err, stdout, stderr) {
+                if (err) {
+                    return next(err)
+                }
+                var write = fs.createWriteStream('./result.png');
 
-        // ctx.font = '30px Impact';
-        // ctx.rotate(.1);
-        // ctx.fillText("Awesome!", 50, 100);
-        //
-        // var te = ctx.measureText('Awesome!');
-        // ctx.strokeStyle = 'rgba(0,0,0,0.5)';
-        // ctx.beginPath();
-        // ctx.lineTo(50, 102);
-        // ctx.lineTo(50 + te.width, 102);
-        // ctx.stroke();
-
-        // ctx.drawImage(img, 100, 100, img.width / 4, img.height / 4);
+                stdout.pipe(write); //pipe to response
+            });
 
         callback();
 

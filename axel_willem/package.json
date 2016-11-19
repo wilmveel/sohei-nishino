@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/wilmveel/sohei-nishino#readme",
   "dependencies": {
+    "gm": "^1.23.0",
     "osm-read": "^0.6.0"
   }
 }

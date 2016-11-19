@@ -1,4 +1,10 @@
-##install depencies
+##install dependencies
+for mac:
+brew install graphicsmagick
+
+for windows:
+install graphicsmagick shizzle
+
 npm i
 
 ##run

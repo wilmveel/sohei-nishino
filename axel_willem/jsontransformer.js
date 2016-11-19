@@ -30,15 +30,14 @@ encoder.prototype._transform = function _transform(streamobj, encoding, callback
         };
 
         https.get(options, function (res) {
-            var imagedata = '';
-            res.setEncoding('binary');
+            var imagedata = new Buffer(0);
 
             res.on('data', function (chunk) {
-                imagedata += chunk
+                imagedata = Buffer.concat([imagedata, chunk]);
             });
 
             res.on('end', function () {
-                obj.img = new Buffer(imagedata).toString("base64");
+                obj.img = imagedata.toString("base64");
                 self.push(obj);
                 callback();
             });

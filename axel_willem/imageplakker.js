@@ -3,7 +3,6 @@ var inherits = require('util').inherits;
 var fs = require('fs');
 var gm = require('gm');
 
-
 function encoder(options) {
     if ( ! (this instanceof encoder))
         return new encoder(options);
@@ -19,16 +18,16 @@ encoder.prototype._transform = function _transform(obj, encoding, callback) {
 
     try {
         var file = new Buffer(obj.img, 'base64');
-        // var file = {lat:1, lng:1, x:50, y:0,   img:'./images/image52.108416-5.0890658.jpg'};
 
-        console.log(obj.img);
+        fs.writeFileSync('./lomp.png', file);
 
         var x = gm();
-        x.in('-page', '+' + obj.x + '+' + obj.y).in(file);
+        x.in('-page', '+' + obj.x + '+' + obj.y).in('./lomp.png');
         x.mosaic()  // Merges the images as a matrix
             .stream('png', function streamOut (err, stdout, stderr) {
                 if (err) {
-                    return next(err)
+                    console.error(err);
+                    return next(err);
                 }
                 var write = fs.createWriteStream('./result.png');
 

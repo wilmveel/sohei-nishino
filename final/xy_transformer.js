@@ -20,8 +20,12 @@ encoder.prototype._transform = function _transform(json, encoding, callback) {
     var bbox = opts.bbox;
 
     var obj = JSON.parse(json);
+    var h = Math.round((opts.bbox.n - opts.bbox.s) * opts.scale);
+    var w = Math.round((opts.bbox.e - opts.bbox.w) * opts.scale);
     obj.x = Math.round((obj.lon - opts.bbox.w) * opts.scale);
-    obj.y = Math.round((obj.lat - opts.bbox.n) * opts.scale);
+    obj.y = h- Math.round((obj.lat - opts.bbox.s) * opts.scale);
+
+    console.log(obj);
 
     this.push(JSON.stringify(obj));
 

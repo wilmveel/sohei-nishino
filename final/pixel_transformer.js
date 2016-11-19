@@ -16,7 +16,7 @@ function encoder(options) {
 
     console.log('options: ', options);
 
-    var h = Math.round((options.bbox.s - options.bbox.n) * options.scale);
+    var h = Math.round((options.bbox.n - options.bbox.s) * options.scale);
     var w = Math.round((options.bbox.e - options.bbox.w) * options.scale);
 
     console.log('hw', h,w);

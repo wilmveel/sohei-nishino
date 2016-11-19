@@ -10,7 +10,7 @@ function encoder(options) {
 }
 inherits(encoder, Transform);
 encoder.prototype._transform = function _transform(json, encoding, callback) {
-    if (Math.random() < 0.5)
+    if (Math.random() < 0.3)
         this.push(json);
     callback();
 };  

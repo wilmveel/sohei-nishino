@@ -10,17 +10,17 @@ var dataErosionTransformer = require('./data_erosion_transformer')
 
 
 var bbox_amsterdam = {
-    n: 52.3535,
-    w: 4.8681,
-    s: 52.3878,
-    e: 4.9402
+    n: 52.4078,
+    e: 4.9722,
+    s: 52.3391,
+    w: 4.8421
 };
 
 var bbox_utrecht = {
-    n: 52.0119,
-    w: 4.9126,
-    s: 52.1501,
-    e: 5.2868
+    n: 52.1503,
+    e: 5.2298,
+    s: 52.0121,
+    w: 4.9696
 };
 
 
@@ -31,7 +31,7 @@ var options = {
     scale: scale
 };
 
-var query = '(way(' + options.bbox.n + ',' + options.bbox.w + ',' + options.bbox.s + ',' + options.bbox.e + ')["highway"~"primary"]);node(w);out;';
+var query = '(way(' + options.bbox.s + ',' + options.bbox.w + ',' + options.bbox.n + ',' + options.bbox.e + ')["highway"~"primary"]);node(w);out;';
 
 
 request

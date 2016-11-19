@@ -3,6 +3,8 @@ var inherits = require('util').inherits;
 var https = require('https');
 var fs = require('fs');
 
+var size = 20;
+
 module.exports = encoder;
 
 function encoder(options) {
@@ -21,7 +23,7 @@ encoder.prototype._transform = function _transform(streamobj, encoding, callback
     var obj = JSON.parse(streamobj);
     var self = this;
 
-    var size = '20x20';
+    var size = '20x40';
 
     try {
         var options = {
@@ -31,14 +33,12 @@ encoder.prototype._transform = function _transform(streamobj, encoding, callback
             method: 'GET'
         };
 
-        console.log(options.path);
-
         var imageName = './images/image' + obj.lat + '-' + obj.lon + '-' +  size +'.jpg';
         try {
             fs.accessSync(imageName, fs.F_OK);
             var cachedFile = fs.readFileSync(imageName);
             obj.img = cachedFile.toString('base64');
-            console.log('image\n', obj.img, '\n\n');
+
             self.push(JSON.stringify(obj));
             callback();
         } catch (e) {

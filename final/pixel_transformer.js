@@ -47,13 +47,13 @@ encoder.prototype._transform = function _transform(json, encoding, callback) {
 
 
 encoder.prototype._flush = function (cb) {
-    console.log('JOLO');
+    console.log('YOLO');
 
     canvas
-        .write(__dirname + '/jolo.jpg', function (error) {
+        .write(__dirname + '/yolo.jpg', function (error) {
             console.log("Finished saving", error);
         });
 
-    console.log('JOLO');
+    console.log('YOLO');
     cb();
 };

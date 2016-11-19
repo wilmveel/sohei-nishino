@@ -1,8 +1,9 @@
 //var request = require('request');
-var fs = require('fs')
+var fs = require('fs');
 
 //var parse = require('./xmltransformer')
 var parsejson = require('./jsontransformer');
+var plakimg = require('./imageplakker');
 
 //var query = '(way(52.0109,4.9507,52.1510,5.2484)[highway=primary]);node(w);out;';
 
@@ -10,5 +11,6 @@ var parsejson = require('./jsontransformer');
 //     data: query
 // })
     fs.createReadStream('test.json')
-    .pipe(parsejson());
-    //.pipe(fs.createWriteStream('osm_high.xml'));
+        .pipe(parsejson())
+        .pipe(plakimg());
+        // .pipe(fs.createWriteStream('yolo.json'));

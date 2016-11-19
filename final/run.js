@@ -1,6 +1,6 @@
 var request = require('request');
-var fs = require('fs')
-var byline = require('byline')
+var fs = require('fs');
+var byline = require('byline');
 
 var xmlTransformer = require('./xml_transformer');
 var xyTransformer = require('./xy_transformer');
@@ -33,8 +33,6 @@ request
     .pipe(byline())
     .pipe(xmlTransformer())
     .pipe(xyTransformer(options))
-    //.pipe(imageDownloadTransformer(options))
-    //.pipe(fs.createWriteStream('osm_high.xml'))
-
+    .pipe(imageDownloadTransformer(options))
+    // .pipe(fs.createWriteStream('osm_high.xml'))
     .pipe(pixelTransformer(options));
-
